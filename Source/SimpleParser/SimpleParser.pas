@@ -1865,6 +1865,10 @@ begin
       begin
         NextToken;
       end;
+    ptStatic:
+      begin
+        NextToken;
+      end;
   else
     begin
       SynError(InvalidDirectiveBinding);
@@ -4723,7 +4727,7 @@ begin
       end;
     ptStatic:
       begin
-        NextToken;
+        DirectiveBinding;
       end;
     ptInline:
       begin

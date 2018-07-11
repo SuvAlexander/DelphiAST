@@ -1143,7 +1143,9 @@ begin
   else if SameText(token, 'overload') then
     FStack.Peek.SetAttribute(anOverload, AttributeValues[atTrue])
   else if SameText(token, 'abstract') then
-    FStack.Peek.SetAttribute(anAbstract, AttributeValues[atTrue]);
+    FStack.Peek.SetAttribute(anAbstract, AttributeValues[atTrue])
+  else if SameText(token, 'static') then
+    FStack.Peek.SetAttribute(anStatic, AttributeValues[atTrue]);
 
   inherited;
 end;

@@ -152,7 +152,8 @@ type
     anReintroduce,
     anOverload,
     anAbstract,
-    anInline
+    anInline,
+    anStatic
   );
 
 const
@@ -305,7 +306,8 @@ const
     'reintroduce',
     'overload',
     'abstract',
-    'inline'
+    'inline',
+    'static'
   );
 
 implementation
